@@ -1,0 +1,209 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+  background-color: #f5df96;
+}
+h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+  position: relative;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+form h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  margin: 5px;
+  justify-content: left;
+}
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  transition: 0.5s;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+label a{
+  color: white;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+nav ul button{
+  background: #004a80;
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+a.active, a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+
+
+.form-table{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #191919;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.form-table h2{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.form-table p input[type = "name"],
+.form-table p input[type = "address"],
+.form-table p input[type = "phone"],
+.form-table p input[type = "rating"],
+.form-table p input[type = "comment"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 10px auto 2px;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: .25s;
+}
+
+.form-table p input[type = "name"]:focus,
+.form-table p input[type = "address"]:focus,
+.form-table p input[type = "phone"]:focus,
+.form-table p input[type = "rating"]:focus,
+.form-table p input[type = "comment"]:focus {
+  width: 280px;
+  border-color: #2ecc71;
+}
+
+.form-table button{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 10px auto 2px;
+  text-align: center;
+  border: 2px solid #78cb00;
+  padding: 14px 10px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: .25s;
+}
+
+.rests{
+  margin-top: 30px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  max-width: 100%;
+}
+
+.text{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 550px;
+}
+
+.rests .smth{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+#ex{
+  color: white;
+  background-color: darkblue;
+  font-size: 20px;
+  border-radius: 6px;
+  margin-left: 10px;
+  border: 2px solid #cb9643;
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  background: #000000;
+  margin: 0 auto;
+  padding-top: 25px;
+  text-align: center;
+}
+
+footer h2{
+  color: rgb(219, 215, 215);
+  font-size: 30px;
+}
+
+footer p{
+  width: 100%;
+  color: rgb(233, 229, 229);
+  font-size: 1em;
+}
+
+footer a{
+  color: #fff;
+  margin-left: 10px;
+}
+
+.social{
+  height: 50px;
+  width: 50px;
+  margin: 7px;
+}

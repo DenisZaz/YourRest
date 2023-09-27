@@ -1,0 +1,422 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+  background-color: #c2eff8;
+}
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  transition: 0.5s;
+}
+label.logo
+{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+label a{
+  color: white;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+nav ul button{
+  background: #004a80;
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+a.active, a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+
+p{
+  font-weight: 300;
+  color: #111;
+}
+
+
+.banner{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+}
+
+.bannerch{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("src/assets/img/mainpage.jpg");
+  align-items: center;
+
+  background-size: cover;
+}
+
+.intro{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+}
+
+
+
+.banner .content, .bannerch .content, .intro .content, .cash .cashinfo
+{
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2{
+  font-size: 5em;
+  color: #fff;
+}
+
+.cash .cashinfo h2{
+  font-size: 3.5em;
+  color: rgb(29, 255, 4);
+}
+
+.bannerch .content h2{
+  font-size: 4.5em;
+  color: #ff7300;
+}
+
+.intro .content h2{
+  margin-top: 60px;
+  font-size: 3.5em;
+  color:rgb(120, 131, 224);
+}
+
+.banner .content h2 span{
+  color: rgb(255, 0, 0);
+  font-family: fantasy;
+}
+
+.intro .content h2 span{
+  color: rgb(151, 10, 10);
+}
+
+.banner .content p, .bannerch .content p, .cash .cashinfo p
+{
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.intro .content p{
+  margin-top: 10px;
+  font-size: 1.3em;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.btn{
+  font-size: 1em;
+  color: #fff;
+  background: linear-gradient(rgb(204, 157, 157),rgb(248, 0, 0));
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border-radius: 7px;
+}
+
+.btn1{
+  font-size: 1em;
+  color: #fff;
+  background: rgb(4, 66, 146);
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border-radius: 7px;
+}
+
+.btn:hover,.btn1:hover{
+  letter-spacing: 8px;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.sticky{
+  background: rgb(235, 155, 80);
+  padding: 10px 100px;
+  box-shadow: rgba(0, 0, 0, 05);
+}
+
+header .logo{
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+ion-icon{
+  margin-right: 2px;
+}
+
+header ul{
+  position: relative;
+  display: flex;
+}
+
+header ul li{
+  list-style: none;
+  margin-left: 30px;
+}
+
+header ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+
+header.sticky ul li a{
+  color: rgb(255, 255, 255);
+}
+
+header ul li a:hover{
+  color: red;
+}
+
+header ul li a:active{
+  font: 1.05em sans-serif;
+  color: aqua;
+}
+
+section{
+  padding: 100px;
+}
+
+.info{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info .story{
+  position: relative;
+  width: 48%;
+}
+
+.maintext{
+  color: #111;
+  font-weight: 900;
+  font-size: 2.5em;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.info .story .image{
+  position: relative;
+  width: 100%;
+  min-height: 640px;
+}
+
+.info .story .image img{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 110%;
+  object-fit: cover;
+}
+
+.char .cont{
+  text-align: center;
+}
+
+.char .cont h1{
+  font-size: 3em;
+}
+
+.char .cont h1 span{
+  color:rgb(231, 15, 15);
+  margin-left: 5px;
+}
+
+.char .cont p{
+  font-size: 1.3em;
+  margin: 15px;
+}
+
+.heroes{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+.imageBox img{
+  padding: 0px;
+}
+
+.herotext{
+  color:rgb(15, 14, 15);
+}
+
+.char .heroes{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.char .heroes .names{
+  position: relative;
+  width: 265px;
+  height: 265px;
+  margin: 10px;
+  transition: 0.7s;
+  text-align: center;
+}
+
+.char .heroes .names .imageBox,
+.char .heroes .names .herotext
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.char .heroes .names .imageBox img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.char .heroes .names .herotext{
+  background: rgb(3, 25, 31);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.char .heroes .names:hover .herotext{
+  opacity: 0.89;
+}
+
+.char .heroes .names:hover .herotext h3{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.char .heroes .names:hover .herotext h3 p{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer{
+  width: 100%;
+  height: auto;
+  background: #000000;
+  margin: 0 auto;
+  padding-top: 25px;
+  text-align: center;
+}
+
+footer h2{
+  color: rgb(219, 215, 215);
+  font-size: 30px;
+}
+
+footer p{
+  width: 100%;
+  color: rgb(233, 229, 229);
+  font-size: 1em;
+}
+
+footer a{
+  color: #fff;
+  margin-left: 10px;
+}
+
+.social{
+  height: 50px;
+  width: 50px;
+  margin: 7px;
+}

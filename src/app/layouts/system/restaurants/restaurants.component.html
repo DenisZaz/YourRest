@@ -1,0 +1,229 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="restaurants.component.css">
+  <meta charset="utf-8">
+</head>
+<body>
+<nav>
+  <label class="logo"><a routerLink="../main">YourRests</a></label>
+  <ul>
+    <li><a routerLink="../main">Main</a></li>
+    <li><a class="active" routerLink="../restaurants">Restaurants</a></li>
+    <li><a routerLink="../favourites">Reviews</a></li>
+    <a id="ex" href="#">Exit</a>
+  </ul>
+</nav>
+
+
+<section class="bannerch" id="bannerch">
+  <div class="content">
+    <h2>Рестораны Нижнего Новогорода</h2>
+    <p>Туристы(и не только), приезжая в Нижний, часто задаются вопросом "Куда сходить поужинать?"<br>
+    В принципе, этот вопрос задаётся в любом месте мира, но я решил упростить выбор заведения конкретно в НН</p>
+   <a (click)="toHis()" class="btn1">Хочу узнать о них</a>
+  </div>
+</section>
+
+<section class="char" id="char">
+  <div class="cont">
+    <h1>Нижегородские <span>рестораны</span></h1>
+    <p>Ресторанов в Нижнем Новгороде оргомное количество, город-миллионник, как-никак)<br>
+      Здесь представлены самые известные из них</p>
+    <div class="heroes">
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/джани.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Джани ресторан<br><br><p>Рейтинг: 4,5<br>Кухня: восточноевропейская, грузинская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/легриль.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Le Grill<br><br><p><br><br>Рейтинг: 4,8<br>Кухня: европейская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/лепитесто.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Лепи тесто<br><br><p><br><br>Рейтинг: 4,0<br>Кухня: русская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+      <div class="imageBox">
+        <img src="../../../../assets/img/тизер.jpg" height="200" width="300">
+      </div>
+      <div class="herotext">
+        <h3>Тизер<br><br><p><br><br>Рейтинг: 4,3<br>Кухня: европейская,азиатская</p></h3>
+      </div>
+    </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/франки.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Franky<br><br><p><br><br>Рейтинг: 4,6<br>Кухня: европейская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/бакладжан.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Балакджан<br><br><p><br><br>Рейтинг: 4,0<br>Кухня: армянская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/митрич.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Mitrich<br><br><p><br><br>Рейтинг: 4,9<br>Кухня: европейская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/библиотека.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Библиотека<br><br><p><br><br>Рейтинг: 4,6<br>Кухня: европейская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/ёж.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Ресторация Еж<br><br><p><br><br>Рейтинг: 4,3<br>Кухня: европейская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/пяткин.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Пяткинъ<br><br><p><br><br>Рейтинг: 4,0<br>Кухня: русская, центральноевропейская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/экспедиция.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Экспедиция<br><br><p><br><br>Рейтинг: 4,5<br>Кухня: русская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/хмель.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Хмель<br><br><p><br><br>Рейтинг: 4,5<br>Кухня: русская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/хачапурия.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Хачапурия<br><br><p><br><br>Рейтинг: 4,1<br>Кухня: грузинская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/хурма.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Хурма<br><br><p><br><br>Рейтинг: 4,6<br>Кухня: европейская, ближневосточная</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/три%20апельсина.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Три апельсина<br><br><p><br><br>Рейтинг: 4,5<br>Кухня: китайская, азиатская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/фонотека.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Фонотека<br><br><p><br><br>Рейтинг: 4,5<br>Кухня: европейская, азиатская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/monet.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Monet<br><br><p><br><br>Рейтинг: 4,0<br>Кухня: европейская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/барелли.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Barelli<br><br><p><br><br>Рейтинг: 4,5<br>Кухня: итальянская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/безухов.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Безухов<br><br><p><br><br>Рейтинг: 3,5<br>Кухня: европейская, русская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/сова.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Ресторан Сова<br><br><p><br><br>Рейтинг: 4,5<br>Кухня: европейская, русская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/джорджиано.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>ДЖОРДЖИАНО<br><br><p><br><br>Рейтинг: 4,0<br>Кухня: итальянская, грузинская, европейская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/никитин.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Ресторан Никитин<br><br><p><br><br>Рейтинг: 4,5<br>Кухня: европейская, русская</p></h3>
+        </div>
+      </div>
+      <div class="names">
+        <div class="imageBox">
+          <img src="../../../../assets/img/пастарама.jpg" height="200" width="300">
+        </div>
+        <div class="herotext">
+          <h3>Пастарама<br><br><p><br><br>Рейтинг: 3,5<br>Кухня: итальянская</p></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer id="footer">
+  <img class="social" src="../../../../assets/img/вк.png">
+  <img class="social" src="../../../../assets/img/инст.png">
+  <p><br>All rights reserved. 2022</p>
+</footer>
+</body>
+</html>

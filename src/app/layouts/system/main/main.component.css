@@ -1,0 +1,258 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  margin-top: 80px;
+  font-family: montserrat;
+  background-color: #082023;
+}
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  transition: 0.5s;
+}
+
+
+
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+label a{
+  color: white;
+}
+nav ul{
+float: right;
+margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li p{
+  margin-right: 8px;
+  font-weight: bold;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+#ex{
+  color: white;
+  background-color: darkblue;
+  font-size: 20px;
+  border-radius: 6px;
+  margin-left: 10px;
+  border: 2px solid #cb9643;
+}
+
+nav ul button{
+  background: #004a80;
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+a.active, a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+
+
+
+p{
+  font-weight: 300;
+  color: white;
+}
+
+
+.banner{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("src/assets/img/mainpage.jpg");
+  background-size: cover;
+}
+
+.bannerch{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+
+
+
+.banner .content, .bannerch .content, .intro .content, .cash .cashinfo
+{
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2{
+  font-size: 5em;
+  color: #fff;
+}
+
+section{
+  padding: 100px;
+}
+
+.info{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info .story{
+  position: relative;
+  width: 48%;
+}
+
+.maintext{
+  color: #111;
+  font-weight: 900;
+  font-size: 2.5em;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.info .story .image{
+  position: relative;
+  width: 100%;
+  min-height: 640px;
+}
+
+.info .story .image img{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 110%;
+  object-fit: cover;
+}
+
+.intro .content h2{
+  margin-top: 60px;
+  font-size: 3.5em;
+  color:rgb(120, 131, 224);
+}
+
+.banner .content h2 span{
+  color: #cb2e7f
+}
+
+.intro .content h2 span{
+  color: rgb(151, 10, 10);
+}
+
+.banner .content p, .bannerch .content p, .cash .cashinfo p
+{
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.intro .content p{
+  margin-top: 10px;
+  font-size: 1.3em;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+
+.btn{
+  font-size: 1em;
+  color: #fff;
+  background: linear-gradient(rgb(204, 157, 157),rgb(248, 0, 0));
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border-radius: 7px;
+}
+
+.btn1{
+  font-size: 1em;
+  color: #fff;
+  background: rgb(4, 66, 146);
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border-radius: 7px;
+}
+
+.btn:hover,.btn1:hover{
+  letter-spacing: 8px;
+}
+
+section {
+  padding: 100px;
+}
+footer{
+  width: 100%;
+  height: auto;
+  background: #000000;
+  margin: 0 auto;
+  padding-top: 25px;
+  text-align: center;
+}
+
+footer h2{
+  color: rgb(219, 215, 215);
+  font-size: 30px;
+}
+
+footer p{
+  width: 100%;
+  color: rgb(233, 229, 229);
+  font-size: 1em;
+}
+
+footer a{
+  color: #fff;
+  margin-left: 10px;
+}
+
+.social{
+  height: 50px;
+  width: 50px;
+  margin: 7px;
+}

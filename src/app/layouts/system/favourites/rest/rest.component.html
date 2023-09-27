@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="prof">
+  <img class="img" src="assets/img/profile.png">
+  <div class="name">{{restaurant.name}}</div>
+    <div class="date">{{restaurant.date}}</div>
+  </div>
+  <div class="cont">
+    <div class="restname"><p>Ресторан: <span>{{restaurant.address}}</span></p></div>
+    <div class="rating"><p>Оценка:<span> {{restaurant.rating}}</span></p></div>
+  </div>
+  <div class="comment" *ngIf="visible"><p>Комментарий: {{restaurant.comment}}</p></div>
+  <input class="input" [(ngModel)]="newComm" [defaultValue]="restaurant.comment" type="text" *ngIf="!visible">
+  <button class="button" (click)="addNewComm()" *ngIf="!visible">Save</button>
+  <div class="set">
+  <img class="change" (click)="switch()" src="assets/img/free-icon-pen-157399.png">
+  <img class="change" (click)="delRest()" src="assets/img/delete.png">
+  </div>
+</div>

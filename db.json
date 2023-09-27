@@ -1,0 +1,105 @@
+{
+  "posts": [
+    {
+      "id": 3000,
+      "title": "hello"
+    }
+  ],
+  "profile": {
+    "name": "typecode"
+  },
+  "auth": [
+    {
+      "email": "qwerty123@gmail.com",
+      "password": "qwerty123",
+      "name": "Denis",
+      "id": 8658.247512235826
+    },
+    {
+      "email": "qwerty@gmail.com",
+      "password": "111111",
+      "name": "Denis",
+      "id": 890.1275322409452
+    },
+    {
+      "email": "qwerty@gmail.com",
+      "password": "111111",
+      "name": "Denis",
+      "id": 7418.384564747471
+    },
+    {
+      "email": "zzzzzz@mail.ru",
+      "password": "000000",
+      "name": "Denchik",
+      "id": 68.19623369795247
+    },
+    {
+      "email": "lollol@mail.ru",
+      "password": "000000",
+      "name": "Denisss",
+      "id": 7186.403060311266
+    },
+    {
+      "email": "lollol@mail.ru",
+      "password": "000000",
+      "name": "Denisss",
+      "id": 201.11923141774125
+    },
+    {
+      "email": "aaaaaa@gmail.com",
+      "password": "123456",
+      "name": "Nanana",
+      "id": 2964.976539983513
+    },
+    {
+      "email": "zazaza@gmail.com",
+      "password": "111111",
+      "name": "Lola",
+      "id": 4409.413985566055
+    },
+    {
+      "email": "asdfgh@gmail.com",
+      "password": "111111",
+      "name": "Fofofo",
+      "id": 8356.408755673498
+    }
+  ],
+  "favourites": [
+    {
+      "name": "Алина",
+      "address": "Джорджиано",
+      "phone": "",
+      "rating": "4.5",
+      "comment": "Прекрасное место, отличная кухня. Вежливый персонал. Рекомендую к посещению",
+      "id": 655.5017376413597,
+      "date": "18.12.2022, 21:30:09"
+    },
+    {
+      "name": "Денис",
+      "address": "Пастарама",
+      "phone": "",
+      "rating": "3",
+      "comment": "Принесли холодную пасту, официант был грубым. Не рекомендую данное заведение",
+      "id": 499.27314162975466,
+      "date": "18.12.2022, 21:31:16"
+    },
+    {
+      "name": "Андрей",
+      "address": "Опера",
+      "phone": "",
+      "rating": "4.7",
+      "comment": "Замечательная музыка, дружеская атмосфера и прекрасная музыка. Крайне рекомендую",
+      "id": 214.4890944292017,
+      "date": "18.12.2022, 21:32:16"
+    },
+    {
+      "name": "Денис",
+      "address": "Легриль",
+      "phone": "",
+      "rating": "3",
+      "comment": "норм",
+      "id": 58.70837415805252,
+      "date": "19.12.2022, 10:41:34"
+    }
+  ]
+}

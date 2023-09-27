@@ -1,0 +1,46 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="favourites.component.css">
+</head>
+<body>
+<nav>
+  <label class="logo"><a routerLink="../main">YourRests</a></label>
+  <ul>
+    <li><a routerLink="../main">Main</a></li>
+    <li><a routerLink="../restaurants">Restaurants</a></li>
+    <li><a class="active" routerLink="../favourites">Reviews</a></li>
+    <a id="ex" href="#">Exit</a>
+  </ul>
+</nav>
+<h2 id="lab">Оставить отзыв о ресторане</h2>
+<div class="form-table">
+  <form class="box"
+  [formGroup]="form1"
+  (ngSubmit)="onSubmit()">
+    <h2>Добавить отзыв...</h2>
+  <p ><input type = "name" formControlName="name" placeholder="Ваше имя..."></p>
+  <p ><input type = "address" formControlName="address" placeholder="Введите название ресторана..."></p>
+  <p ><input type = "rating" formControlName="rating" placeholder="Введите оценку ресторана..."></p>
+  <p ><input type = "comment" formControlName="comment" placeholder="Напишите отзыв..."></p>
+  <button [disabled]="form1.invalid" type = "submit" name="form_submit">Оставить отзыв</button>
+  </form>
+</div>
+
+
+
+<div class="text"><h1>Оставленные отзывы</h1></div>
+  <div class="rests">
+    <div class="smth">
+      <app-rest (someEvent)="ngOnInit()" *ngFor="let rest of rests" [restaurant]="rest"></app-rest>
+    </div>
+  </div>
+
+
+</body>
+<footer id="footer">
+  <img class="social" src="../../../../assets/img/вк.png">
+  <img class="social" src="../../../../assets/img/инст.png">
+  <p><br>All rights reserved. 2022</p>
+</footer>
+</html>

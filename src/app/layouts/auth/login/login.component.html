@@ -1,0 +1,40 @@
+
+
+<div class="container">
+  <section id="content">
+    <form class="box" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <h1>Login</h1>
+      <div>
+        <input
+          formControlName="email"
+          type="email"
+          placeholder="Email"
+          id="email"
+        />
+      </div>
+      <div *ngIf="email?.invalid && (email?.dirty || email?.touched)">
+        <div class="err" *ngIf="email?.errors?.['required']">Email не может быть пустым</div>
+        <div class="err" *ngIf="email?.errors?.['pattern']">Неверный формат ввода(example@example.ex)</div>
+      </div>
+      <div>
+        <input
+          formControlName = "password"
+          type="password"
+          placeholder="password"
+          id="password" />
+      </div>
+      <div *ngIf="password?.invalid && (password?.dirty || password?.touched)">
+        <div class="err" *ngIf="password?.errors?.['required']">Пароль не может быть пустым</div>
+        <div class="err" *ngIf="password?.errors?.['minlength']">Пароль должен содержать не менее 6 символов</div>
+      </div>
+      <div>
+        <button [disabled] ="form.invalid" type="submit">Submit</button>
+        <p>Don't have an account?</p>
+        <a routerLink="../registrations">Register</a>
+      </div>
+    </form><!-- form -->
+
+  </section><!-- content -->
+</div><!-- container -->
+
+
